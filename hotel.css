@@ -1,0 +1,28 @@
+#drop:hover {
+    background-color: rgb(162, 125, 195);
+  }
+#search{
+    width: 100px;
+}
+#box{
+  border: 2px solid rgb(230, 222, 222);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px rgb(110, 110, 134); 
+}
+#in1{
+border: none;
+}
+#in2{
+border:none;
+}
+a{
+  color: rgb(64, 214, 27);
+}
+#bt{
+  background-color: #fff;
+  border: none;
+}

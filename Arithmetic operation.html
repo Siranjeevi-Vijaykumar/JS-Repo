@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/07/09201440/Arithmetic-Operations.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arithmetic operation</h5>
+          <p class="card-text"><input type="text" placeholder="number 1" id="number1"></p>
+          <p class="card-text"><input type="text" placeholder="number 2" id="number2"></p>
+          <p class="card-text"><input type="text" placeholder="opertion" id="opertion"></p>
+          <div class="btn btn-primary" onclick="myvalue()">Answer</div>
+          <div class="border border-color-primary" style="width: 200px; height: 55px;" id="ed"></div>
+        </div>
+      </div>
+      <script>
+        function myvalue(){
+            var a=Number(document.getElementById("number1").value);
+            var b=Number(document.getElementById("number2").value);
+            var c=document.getElementById("opertion").value;
+            if("add" === c || "+" === c){
+                a+=b
+               var d = document.getElementById("ed").innerHTML=a
+            }
+           else if("sub" === c || "-" === c){
+                a-=b
+               var d = document.getElementById("ed").innerHTML=a
+            }
+           else if("mulp" === c || "*" === c){
+                a*=b
+               var d = document.getElementById("ed").innerHTML=a
+            }
+           else if("div" === c || "/" === c){
+                a/=b
+               var d = document.getElementById("ed").innerHTML=a
+            }
+            else{
+                document.getElementById("ed").innerHTML= "Give a proper operation or number"
+            }
+        }
+      </script>
+</body>
